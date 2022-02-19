@@ -3,450 +3,114 @@
 
 -- Instances:
 
-local PrisonLife = Instance.new("ScreenGui")
-local main = Instance.new("Frame")
-local coolborderthing = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local WORKYOUPIECEOFS = Instance.new("TextButton")
-local Infob = Instance.new("TextButton")
-local Discord = Instance.new("TextButton")
-local InsideGame = Instance.new("ScrollingFrame")
-local PrevailX = Instance.new("Frame")
-local coolborderthing_2 = Instance.new("Frame")
-local Execute1 = Instance.new("TextButton")
-local Image1 = Instance.new("ImageLabel")
-local Madeby1 = Instance.new("TextLabel")
-local Description1 = Instance.new("TextLabel")
-local SeptexAdmin = Instance.new("Frame")
-local coolborderthing_3 = Instance.new("Frame")
-local Execute1_2 = Instance.new("TextButton")
-local Image1_2 = Instance.new("ImageLabel")
-local Madeby1_2 = Instance.new("TextLabel")
-local Description1_2 = Instance.new("TextLabel")
-local ServerCrasher = Instance.new("Frame")
-local coolborderthing_4 = Instance.new("Frame")
-local Execute1_3 = Instance.new("TextButton")
-local Image1_3 = Instance.new("ImageLabel")
-local Madeby1_3 = Instance.new("TextLabel")
-local Description1_3 = Instance.new("TextLabel")
-local DiscordB = Instance.new("Frame")
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
+local freeze = Instance.new("TextLabel")
 local ImageLabel = Instance.new("ImageLabel")
-local TextLabel_2 = Instance.new("TextLabel")
-local InfoF = Instance.new("Frame")
-local TextLabel_3 = Instance.new("TextLabel")
-local TextLabel_4 = Instance.new("TextLabel")
-local TextLabel_5 = Instance.new("TextLabel")
-local coolborderthing_5 = Instance.new("Frame")
-local TextLabel_6 = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
 
 --Properties:
 
-PrisonLife.Name = "Prison Life"
-PrisonLife.Parent = game.StarterGui.ScreenGui
-PrisonLife.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("CoreGui")
+ScreenGui.Enabled = false
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-main.Name = "main"
-main.Parent = PrisonLife
-main.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-main.Position = UDim2.new(0.206187874, 0, 0.296015203, 0)
-main.Size = UDim2.new(0, 429, 0, 213)
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Frame.Position = UDim2.new(0.367946923, 0, 0.333965838, 0)
+Frame.Size = UDim2.new(0, 189, 0, 174)
 
-coolborderthing.Name = "cool border thing"
-coolborderthing.Parent = main
-coolborderthing.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-coolborderthing.BackgroundTransparency = 0.650
-coolborderthing.BorderSizePixel = 0
-coolborderthing.Position = UDim2.new(0, 0, 0.150234744, 0)
-coolborderthing.Size = UDim2.new(0, 429, 0, 2)
-
-UICorner.CornerRadius = UDim.new(0, 5)
-UICorner.Parent = main
-
-WORKYOUPIECEOFS.Name = "WORKYOUPIECEOFS"
-WORKYOUPIECEOFS.Parent = main
-WORKYOUPIECEOFS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-WORKYOUPIECEOFS.BackgroundTransparency = 0.900
-WORKYOUPIECEOFS.Size = UDim2.new(0, 143, 0, 32)
-WORKYOUPIECEOFS.Font = Enum.Font.SourceSansBold
-WORKYOUPIECEOFS.Text = "Game"
-WORKYOUPIECEOFS.TextColor3 = Color3.fromRGB(255, 255, 255)
-WORKYOUPIECEOFS.TextSize = 20.000
-
-Infob.Name = "Infob"
-Infob.Parent = main
-Infob.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Infob.BackgroundTransparency = 1.000
-Infob.Position = UDim2.new(0.333333343, 0, 0, 0)
-Infob.Size = UDim2.new(0, 143, 0, 32)
-Infob.Font = Enum.Font.SourceSansBold
-Infob.Text = "Info"
-Infob.TextColor3 = Color3.fromRGB(255, 255, 255)
-Infob.TextSize = 20.000
-
-Discord.Name = "Discord"
-Discord.Parent = main
-Discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Discord.BackgroundTransparency = 1.000
-Discord.Position = UDim2.new(0.666666687, 0, 0, 0)
-Discord.Size = UDim2.new(0, 143, 0, 32)
-Discord.Font = Enum.Font.SourceSansBold
-Discord.Text = "Discord"
-Discord.TextColor3 = Color3.fromRGB(255, 255, 255)
-Discord.TextSize = 20.000
-
-InsideGame.Name = "InsideGame"
-InsideGame.Parent = main
-InsideGame.Active = true
-InsideGame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-InsideGame.BackgroundTransparency = 1.000
-InsideGame.BorderSizePixel = 0
-InsideGame.Position = UDim2.new(0, 0, 0.159624413, 0)
-InsideGame.Size = UDim2.new(0, 429, 0, 179)
-InsideGame.CanvasSize = UDim2.new(0, 0, 2, 89)
-
-PrevailX.Name = "PrevailX"
-PrevailX.Parent = InsideGame
-PrevailX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PrevailX.BackgroundTransparency = 1.000
-PrevailX.Size = UDim2.new(0, 429, 0, 179)
-
-coolborderthing_2.Name = "cool border thing"
-coolborderthing_2.Parent = PrevailX
-coolborderthing_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-coolborderthing_2.BackgroundTransparency = 0.650
-coolborderthing_2.BorderSizePixel = 0
-coolborderthing_2.Position = UDim2.new(0, 0, 0.931900501, 1)
-coolborderthing_2.Size = UDim2.new(0, 429, 0, 2)
-
-Execute1.Name = "Execute1"
-Execute1.Parent = PrevailX
-Execute1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Execute1.BackgroundTransparency = 0.950
-Execute1.Position = UDim2.new(0.470862508, 0, 0.575589538, 0)
-Execute1.Size = UDim2.new(0, 200, 0, 39)
-Execute1.Font = Enum.Font.SourceSansBold
-Execute1.Text = "Execute"
-Execute1.TextColor3 = Color3.fromRGB(255, 255, 255)
-Execute1.TextSize = 30.000
-
-Image1.Name = "Image1"
-Image1.Parent = PrevailX
-Image1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Image1.BackgroundTransparency = 1.000
-Image1.Position = UDim2.new(0.0349650346, 0, 0.237907112, 0)
-Image1.Size = UDim2.new(0, 151, 0, 85)
-Image1.Image = "rbxassetid://8860893733"
-Image1.ScaleType = Enum.ScaleType.Fit
-
-Madeby1.Name = "Madeby1"
-Madeby1.Parent = PrevailX
-Madeby1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Madeby1.BackgroundTransparency = 1.000
-Madeby1.Position = UDim2.new(0.0349650308, 0, 0.0363531262, 0)
-Madeby1.Size = UDim2.new(0, 146, 0, 30)
-Madeby1.Font = Enum.Font.GothamBold
-Madeby1.Text = "Prevail X"
-Madeby1.TextColor3 = Color3.fromRGB(255, 255, 255)
-Madeby1.TextSize = 15.000
-Madeby1.TextWrapped = true
-
-Description1.Name = "Description1"
-Description1.Parent = PrevailX
-Description1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Description1.BackgroundTransparency = 1.000
-Description1.Position = UDim2.new(0.428904444, 0, 0.169983655, 0)
-Description1.Size = UDim2.new(0, 237, 0, 66)
-Description1.Font = Enum.Font.GothamBold
-Description1.Text = "A very good script with a lot of features: Chat commands,Unlimited stamina etc."
-Description1.TextColor3 = Color3.fromRGB(255, 255, 255)
-Description1.TextSize = 15.000
-Description1.TextWrapped = true
-
-SeptexAdmin.Name = "Septex Admin"
-SeptexAdmin.Parent = InsideGame
-SeptexAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SeptexAdmin.BackgroundTransparency = 1.000
-SeptexAdmin.Position = UDim2.new(0, 0, 0, 170)
-SeptexAdmin.Size = UDim2.new(0, 429, 0, 179)
-
-coolborderthing_3.Name = "cool border thing"
-coolborderthing_3.Parent = SeptexAdmin
-coolborderthing_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-coolborderthing_3.BackgroundTransparency = 0.650
-coolborderthing_3.BorderSizePixel = 0
-coolborderthing_3.Position = UDim2.new(0, 0, 0.931900501, 1)
-coolborderthing_3.Size = UDim2.new(0, 429, 0, 2)
-
-Execute1_2.Name = "Execute1"
-Execute1_2.Parent = SeptexAdmin
-Execute1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Execute1_2.BackgroundTransparency = 0.950
-Execute1_2.Position = UDim2.new(0.470862508, 0, 0.575589538, 0)
-Execute1_2.Size = UDim2.new(0, 200, 0, 39)
-Execute1_2.Font = Enum.Font.SourceSansBold
-Execute1_2.Text = "Execute"
-Execute1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Execute1_2.TextSize = 30.000
-
-Image1_2.Name = "Image1"
-Image1_2.Parent = SeptexAdmin
-Image1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Image1_2.BackgroundTransparency = 1.000
-Image1_2.Position = UDim2.new(0.0349650346, 0, 0.237907112, 0)
-Image1_2.Size = UDim2.new(0, 151, 0, 85)
-Image1_2.Image = "rbxassetid://8861618412"
-Image1_2.ScaleType = Enum.ScaleType.Fit
-
-Madeby1_2.Name = "Madeby1"
-Madeby1_2.Parent = SeptexAdmin
-Madeby1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Madeby1_2.BackgroundTransparency = 1.000
-Madeby1_2.Position = UDim2.new(0.0396270342, 0, 0.0363531224, 0)
-Madeby1_2.Size = UDim2.new(0, 146, 0, 30)
-Madeby1_2.Font = Enum.Font.GothamBold
-Madeby1_2.Text = "Septex Admin"
-Madeby1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Madeby1_2.TextSize = 15.000
-Madeby1_2.TextWrapped = true
-
-Description1_2.Name = "Description1"
-Description1_2.Parent = SeptexAdmin
-Description1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Description1_2.BackgroundTransparency = 1.000
-Description1_2.Position = UDim2.new(0.428904444, 0, 0.169983655, 0)
-Description1_2.Size = UDim2.new(0, 237, 0, 66)
-Description1_2.Font = Enum.Font.GothamBold
-Description1_2.Text = "Probably the best script out there with unique features such as: Give people keycard and more!"
-Description1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Description1_2.TextSize = 15.000
-Description1_2.TextWrapped = true
-
-ServerCrasher.Name = "Server Crasher"
-ServerCrasher.Parent = InsideGame
-ServerCrasher.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ServerCrasher.BackgroundTransparency = 1.000
-ServerCrasher.Position = UDim2.new(0, 0, 0, 340)
-ServerCrasher.Size = UDim2.new(0, 429, 0, 179)
-
-coolborderthing_4.Name = "cool border thing"
-coolborderthing_4.Parent = ServerCrasher
-coolborderthing_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-coolborderthing_4.BackgroundTransparency = 0.650
-coolborderthing_4.BorderSizePixel = 0
-coolborderthing_4.Position = UDim2.new(0, 0, 0.931900501, 1)
-coolborderthing_4.Size = UDim2.new(0, 429, 0, 2)
-
-Execute1_3.Name = "Execute1"
-Execute1_3.Parent = ServerCrasher
-Execute1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Execute1_3.BackgroundTransparency = 0.950
-Execute1_3.Position = UDim2.new(0.470862508, 0, 0.575589538, 0)
-Execute1_3.Size = UDim2.new(0, 200, 0, 39)
-Execute1_3.Font = Enum.Font.SourceSansBold
-Execute1_3.Text = "Execute"
-Execute1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Execute1_3.TextSize = 30.000
-
-Image1_3.Name = "Image1"
-Image1_3.Parent = ServerCrasher
-Image1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Image1_3.BackgroundTransparency = 1.000
-Image1_3.BorderSizePixel = 0
-Image1_3.Position = UDim2.new(0.0349650346, 0, 0.237907112, 0)
-Image1_3.Size = UDim2.new(0, 151, 0, 85)
-Image1_3.Image = "rbxassetid://8861668008"
-Image1_3.ScaleType = Enum.ScaleType.Fit
-
-Madeby1_3.Name = "Madeby1"
-Madeby1_3.Parent = ServerCrasher
-Madeby1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Madeby1_3.BackgroundTransparency = 1.000
-Madeby1_3.Position = UDim2.new(0.0396270342, 0, 0.0363531262, 0)
-Madeby1_3.Size = UDim2.new(0, 146, 0, 30)
-Madeby1_3.Font = Enum.Font.GothamBold
-Madeby1_3.Text = "Server crasher"
-Madeby1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Madeby1_3.TextSize = 15.000
-Madeby1_3.TextWrapped = true
-
-Description1_3.Name = "Description1"
-Description1_3.Parent = ServerCrasher
-Description1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Description1_3.BackgroundTransparency = 1.000
-Description1_3.Position = UDim2.new(0.428904444, 0, 0.169983655, 0)
-Description1_3.Size = UDim2.new(0, 237, 0, 66)
-Description1_3.Font = Enum.Font.GothamBold
-Description1_3.Text = "Kill the server"
-Description1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Description1_3.TextSize = 15.000
-Description1_3.TextWrapped = true
-
-DiscordB.Name = "DiscordB"
-DiscordB.Parent = main
-DiscordB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DiscordB.BackgroundTransparency = 1.000
-DiscordB.Position = UDim2.new(0, 0, 0.159624413, 0)
-DiscordB.Size = UDim2.new(0, 429, 0, 179)
-DiscordB.Visible = false
-
-TextLabel.Parent = DiscordB
+TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.260950357, 0, 0.236073241, 0)
-TextLabel.Size = UDim2.new(0, 311, 0, 29)
-TextLabel.Font = Enum.Font.Arcade
-TextLabel.Text = "we have a discord server!"
+TextLabel.Position = UDim2.new(-0.0963034704, 0, 0.706323802, 0)
+TextLabel.Size = UDim2.new(0, 234, 0, 31)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Loading..."
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-ImageLabel.Parent = DiscordB
+freeze.Name = "freeze"
+freeze.Parent = Frame
+freeze.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+freeze.BackgroundTransparency = 1.000
+freeze.Position = UDim2.new(0.152577236, 0, 0.881417096, 0)
+freeze.Size = UDim2.new(0, 130, 0, 11)
+freeze.Font = Enum.Font.SourceSansBold
+freeze.Text = "Do not panic if freeze"
+freeze.TextColor3 = Color3.fromRGB(255, 255, 255)
+freeze.TextScaled = true
+freeze.TextSize = 14.000
+freeze.TextWrapped = true
+
+ImageLabel.Parent = Frame
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.Position = UDim2.new(0.0186480153, 0, 0.139664829, 0)
-ImageLabel.Size = UDim2.new(0, 94, 0, 94)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.196458995, 0, 0.0542123765, 0)
+ImageLabel.Size = UDim2.new(0, 114, 0, 114)
 ImageLabel.Image = "rbxassetid://8860820090"
 ImageLabel.ScaleType = Enum.ScaleType.Fit
 
-TextLabel_2.Parent = DiscordB
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.319225371, 0, 0.319872141, 0)
-TextLabel_2.Size = UDim2.new(0, 261, 0, 29)
-TextLabel_2.Font = Enum.Font.Arcade
-TextLabel_2.Text = "https://discord.gg/8KYPWA34Rq"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-
-InfoF.Name = "InfoF"
-InfoF.Parent = main
-InfoF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-InfoF.BackgroundTransparency = 1.000
-InfoF.Position = UDim2.new(0, 0, 0.159624413, 0)
-InfoF.Size = UDim2.new(0, 429, 0, 179)
-InfoF.Visible = false
-
-TextLabel_3.Parent = InfoF
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(-0.000121928038, 0, 0.191380501, 0)
-TextLabel_3.Size = UDim2.new(0, 218, 0, 39)
-TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "Created by "
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
-
-TextLabel_4.Parent = InfoF
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(0.533677578, 0, 0.319872141, 0)
-TextLabel_4.Size = UDim2.new(0, 162, 0, 30)
-TextLabel_4.Font = Enum.Font.SourceSansBold
-TextLabel_4.Text = "cursedv2#3199"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
-
-TextLabel_5.Parent = InfoF
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(0.0301811025, 0, 0.621548116, 0)
-TextLabel_5.Size = UDim2.new(0, 205, 0, 30)
-TextLabel_5.Font = Enum.Font.SourceSansBold
-TextLabel_5.Text = "Patched scripts: unknown"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextScaled = true
-TextLabel_5.TextSize = 14.000
-TextLabel_5.TextWrapped = true
-
-coolborderthing_5.Name = "cool border thing"
-coolborderthing_5.Parent = InfoF
-coolborderthing_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-coolborderthing_5.BackgroundTransparency = 0.650
-coolborderthing_5.BorderSizePixel = 0
-coolborderthing_5.Position = UDim2.new(-0.00233100238, 0, 0.558055997, 0)
-coolborderthing_5.Size = UDim2.new(0, 429, 0, 2)
-
-TextLabel_6.Parent = InfoF
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.Position = UDim2.new(0.0301811025, 0, 0.789145827, 0)
-TextLabel_6.Size = UDim2.new(0, 192, 0, 30)
-TextLabel_6.Font = Enum.Font.SourceSansBold
-TextLabel_6.Text = "Last updated 18/2/2022"
-TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.TextScaled = true
-TextLabel_6.TextSize = 14.000
-TextLabel_6.TextWrapped = true
+UICorner.CornerRadius = UDim.new(0.300000012, 8)
+UICorner.Parent = ImageLabel
 
 -- Scripts:
 
-local function QWZXSG_fake_script() -- WORKYOUPIECEOFS.LocalScript 
-	local script = Instance.new('LocalScript', WORKYOUPIECEOFS)
+local function BTUZ_fake_script() -- TextLabel.LoadingScript 
+	local script = Instance.new('LocalScript', TextLabel)
 
-	script.Parent.MouseButton1Down:connect(function()
-		script.Parent.Parent.InsideGame.Visible = true
-		script.Parent.Parent.Infob.BackgroundTransparency = 1.00
-		script.Parent.Parent.WORKYOUPIECEOFS.BackgroundTransparency = 0.90
-		script.Parent.Parent.Discord.BackgroundTransparency = 1.00
-		script.Parent.Parent.InfoF.Visible = false
-		script.Parent.Parent.DiscordB.Visible = false
-	end)
+	local txt = script.Parent
+	local gameid = game.PlaceId
+	
+	repeat wait() until game:IsLoaded()
+	
+	txt.Text = "Loading..."
+	wait(0.5)
+	txt.Text = "Loading.."
+	wait(0.5)
+	txt.Text = "Loading."
+	wait(0.5)
+	txt.Text = "Loaded"
+	
+	
+	local games = {
+		["155615604"] = "Prison Life",  
+	}
+	
+	
+	function LoadScript(name)
+		if script.Parent.Parent.Parent.Parent:FindFirstChild(name) then
+			script.Parent.Parent.Parent.Parent[name].Enabled = true
+		end
+	end
+	
+	
+	if table.find(games, gameid) then
+		LoadScript(game[gameid])
+	end
+	
+	
+	script.Parent.Parent:Destroy()
 end
-coroutine.wrap(QWZXSG_fake_script)()
-local function HFNOXD_fake_script() -- Infob.LocalScript 
-	local script = Instance.new('LocalScript', Infob)
+coroutine.wrap(BTUZ_fake_script)()
+local function HIHGDSG_fake_script() -- Frame.run 
+	local script = Instance.new('LocalScript', Frame)
 
-	script.Parent.MouseButton1Down:connect(function()
-	script.Parent.Parent.InsideGame.Visible = false
-	script.Parent.Parent.Infob.BackgroundTransparency = 0.90
-		script.Parent.Parent.WORKYOUPIECEOFS.BackgroundTransparency = 1.00
-	script.Parent.Parent.Discord.BackgroundTransparency = 1.00
-	script.Parent.Parent.InfoF.Visible = true
-		script.Parent.Parent.DiscordB.Visible = false
-		end)
+	wait(5)
+	if game.PlaceId == 155615604 then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/woahminas/RoSploits/main/Script.txt", true))()
+		script.Parent.freeze.Text = "Prison life running script now..."
+		wait(1)
+		script.Parent.Parent.Parent.ScreenGui.Enabled = false
+	elseif game.PlaceId == 17361822 then
+		print("This is another game")
+	else
+		script.Parent.freeze.Text = "No games were detected."
+		print("This game has no scripts")
+	end
 end
-coroutine.wrap(HFNOXD_fake_script)()
-local function SRVA_fake_script() -- Discord.LocalScript 
-	local script = Instance.new('LocalScript', Discord)
-
-	script.Parent.MouseButton1Down:connect(function()
-		script.Parent.Parent.InsideGame.Visible = false
-		script.Parent.Parent.Infob.BackgroundTransparency = 1.00
-		script.Parent.Parent.WORKYOUPIECEOFS.BackgroundTransparency = 1.00
-		script.Parent.Parent.Discord.BackgroundTransparency = 0.90
-		script.Parent.Parent.InfoF.Visible = false
-		script.Parent.Parent.DiscordB.Visible = true
-	end)
-end
-coroutine.wrap(SRVA_fake_script)()
-local function MKLMXV_fake_script() -- Execute1.LocalScript 
-	local script = Instance.new('LocalScript', Execute1)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
-	end)
-end
-coroutine.wrap(MKLMXV_fake_script)()
-local function TCZCRY_fake_script() -- Execute1_2.LocalScript 
-	local script = Instance.new('LocalScript', Execute1_2)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/woahminas/crash/main/crsaher.txt?token=GHSAT0AAAAAABRXJHJUPMYGDHEPQOT2STOYYQP7TJA'), true))()
-	end)
-end
-coroutine.wrap(TCZCRY_fake_script)()
-local function ZLQAJAN_fake_script() -- Execute1_3.hell 
-	local script = Instance.new('LocalScript', Execute1_3)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'), true))()
-	end)
-end
-coroutine.wrap(ZLQAJAN_fake_script)()
+coroutine.wrap(HIHGDSG_fake_script)()
