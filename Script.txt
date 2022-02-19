@@ -51,7 +51,7 @@ Prisonlife.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 main.Name = "main"
 main.Parent = Prisonlife
 main.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
-main.Position = UDim2.new(0.033726126, 0, 0.455408007, 0)
+main.Position = UDim2.new(0.206187874, 0, 0.296015203, 0)
 main.Size = UDim2.new(0, 429, 0, 213)
 
 coolborderthing.Name = "cool border thing"
@@ -399,7 +399,7 @@ UICorner_2.Parent = detailed
 
 -- Scripts:
 
-local function UVAEEG_fake_script() -- Game.LocalScript 
+local function MZGFB_fake_script() -- Game.LocalScript 
 	local script = Instance.new('LocalScript', Game)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -411,8 +411,8 @@ local function UVAEEG_fake_script() -- Game.LocalScript
 		script.Parent.Parent.DiscordB.Visible = false
 	end)
 end
-coroutine.wrap(UVAEEG_fake_script)()
-local function SBYNYJB_fake_script() -- Infob.LocalScript 
+coroutine.wrap(MZGFB_fake_script)()
+local function PIWFUW_fake_script() -- Infob.LocalScript 
 	local script = Instance.new('LocalScript', Infob)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -424,8 +424,8 @@ local function SBYNYJB_fake_script() -- Infob.LocalScript
 		script.Parent.Parent.DiscordB.Visible = false
 		end)
 end
-coroutine.wrap(SBYNYJB_fake_script)()
-local function NIJKUD_fake_script() -- Discord.LocalScript 
+coroutine.wrap(PIWFUW_fake_script)()
+local function RLSAU_fake_script() -- Discord.LocalScript 
 	local script = Instance.new('LocalScript', Discord)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -437,28 +437,28 @@ local function NIJKUD_fake_script() -- Discord.LocalScript
 		script.Parent.Parent.DiscordB.Visible = true
 	end)
 end
-coroutine.wrap(NIJKUD_fake_script)()
-local function JTUPDJO_fake_script() -- Execute1.LocalScript 
+coroutine.wrap(RLSAU_fake_script)()
+local function BLNG_fake_script() -- Execute1.LocalScript 
 	local script = Instance.new('LocalScript', Execute1)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
 	end)
 end
-coroutine.wrap(JTUPDJO_fake_script)()
-local function RZOSC_fake_script() -- Execute1_2.LocalScript 
+coroutine.wrap(BLNG_fake_script)()
+local function JONBQY_fake_script() -- Execute1_2.LocalScript 
 	local script = Instance.new('LocalScript', Execute1_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/woahminas/crash/main/crsaher.txt?token=GHSAT0AAAAAABRXJHJUPMYGDHEPQOT2STOYYQP7TJA'), true))()
 	end)
 end
-coroutine.wrap(RZOSC_fake_script)()
-local function HZWGRV_fake_script() -- Execute1_3.hell 
+coroutine.wrap(JONBQY_fake_script)()
+local function VCVRUHM_fake_script() -- Execute1_3.hell 
 	local script = Instance.new('LocalScript', Execute1_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'), true))()
 	end)
 end
-coroutine.wrap(HZWGRV_fake_script)()
+coroutine.wrap(VCVRUHM_fake_script)()
