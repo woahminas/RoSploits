@@ -3,11 +3,11 @@
 
 -- Instances:
 
-local Prisonlife = Instance.new("ScreenGui")
+local PrisonLife = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local coolborderthing = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local Game = Instance.new("TextButton")
+local WORKYOUPIECEOFS = Instance.new("TextButton")
 local Infob = Instance.new("TextButton")
 local Discord = Instance.new("TextButton")
 local InsideGame = Instance.new("ScrollingFrame")
@@ -39,17 +39,16 @@ local TextLabel_4 = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local coolborderthing_5 = Instance.new("Frame")
 local TextLabel_6 = Instance.new("TextLabel")
-local detailed = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
 
 --Properties:
 
-Prisonlife.Name = "Prison life"
-Prisonlife.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Prisonlife.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+PrisonLife.Name = "Prison Life"
+PrisonLife.Parent = game.StarterGui.ScreenGui
+PrisonLife.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 main.Name = "main"
-main.Parent = Prisonlife
+main.Parent = PrisonLife
 main.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
 main.Position = UDim2.new(0.206187874, 0, 0.296015203, 0)
 main.Size = UDim2.new(0, 429, 0, 213)
@@ -65,15 +64,15 @@ coolborderthing.Size = UDim2.new(0, 429, 0, 2)
 UICorner.CornerRadius = UDim.new(0, 5)
 UICorner.Parent = main
 
-Game.Name = "Game"
-Game.Parent = main
-Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Game.BackgroundTransparency = 1.000
-Game.Size = UDim2.new(0, 143, 0, 32)
-Game.Font = Enum.Font.SourceSansBold
-Game.Text = "Game"
-Game.TextColor3 = Color3.fromRGB(255, 255, 255)
-Game.TextSize = 20.000
+WORKYOUPIECEOFS.Name = "WORKYOUPIECEOFS"
+WORKYOUPIECEOFS.Parent = main
+WORKYOUPIECEOFS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WORKYOUPIECEOFS.BackgroundTransparency = 0.900
+WORKYOUPIECEOFS.Size = UDim2.new(0, 143, 0, 32)
+WORKYOUPIECEOFS.Font = Enum.Font.SourceSansBold
+WORKYOUPIECEOFS.Text = "Game"
+WORKYOUPIECEOFS.TextColor3 = Color3.fromRGB(255, 255, 255)
+WORKYOUPIECEOFS.TextSize = 20.000
 
 Infob.Name = "Infob"
 Infob.Parent = main
@@ -381,84 +380,93 @@ TextLabel_6.BackgroundTransparency = 1.000
 TextLabel_6.Position = UDim2.new(0.0301811025, 0, 0.789145827, 0)
 TextLabel_6.Size = UDim2.new(0, 192, 0, 30)
 TextLabel_6.Font = Enum.Font.SourceSansBold
-TextLabel_6.Text = "Last updated 18/2/2022"
+TextLabel_6.Text = "Last updated 19/2/2022"
 TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.TextScaled = true
 TextLabel_6.TextSize = 14.000
 TextLabel_6.TextWrapped = true
 
-detailed.Name = "detailed"
-detailed.Parent = main
-detailed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-detailed.BackgroundTransparency = 0.900
-detailed.BorderSizePixel = 0
-detailed.Size = UDim2.new(0, 136, 0, 32)
-
-UICorner_2.CornerRadius = UDim.new(0, 5)
-UICorner_2.Parent = detailed
+TextLabel_7.Parent = InfoF
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.533677578, 0, 0.174620733, 0)
+TextLabel_7.Size = UDim2.new(0, 162, 0, 36)
+TextLabel_7.Font = Enum.Font.SourceSansBold
+TextLabel_7.Text = "shitass#6733"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
 
 -- Scripts:
 
-local function MZGFB_fake_script() -- Game.LocalScript 
-	local script = Instance.new('LocalScript', Game)
+local function TJQFQB_fake_script() -- WORKYOUPIECEOFS.LocalScript 
+	local script = Instance.new('LocalScript', WORKYOUPIECEOFS)
 
 	script.Parent.MouseButton1Down:connect(function()
 		script.Parent.Parent.InsideGame.Visible = true
 		script.Parent.Parent.Infob.BackgroundTransparency = 1.00
-		script.Parent.Parent.gamebutton.BackgroundTransparency = 0.90
+		script.Parent.Parent.WORKYOUPIECEOFS.BackgroundTransparency = 0.90
 		script.Parent.Parent.Discord.BackgroundTransparency = 1.00
 		script.Parent.Parent.InfoF.Visible = false
 		script.Parent.Parent.DiscordB.Visible = false
 	end)
 end
-coroutine.wrap(MZGFB_fake_script)()
-local function PIWFUW_fake_script() -- Infob.LocalScript 
+coroutine.wrap(TJQFQB_fake_script)()
+local function OSZRYO_fake_script() -- Infob.LocalScript 
 	local script = Instance.new('LocalScript', Infob)
 
 	script.Parent.MouseButton1Down:connect(function()
 	script.Parent.Parent.InsideGame.Visible = false
 	script.Parent.Parent.Infob.BackgroundTransparency = 0.90
-	script.Parent.Parent.gamebutton.BackgroundTransparency = 1.00
+		script.Parent.Parent.WORKYOUPIECEOFS.BackgroundTransparency = 1.00
 	script.Parent.Parent.Discord.BackgroundTransparency = 1.00
 	script.Parent.Parent.InfoF.Visible = true
 		script.Parent.Parent.DiscordB.Visible = false
 		end)
 end
-coroutine.wrap(PIWFUW_fake_script)()
-local function RLSAU_fake_script() -- Discord.LocalScript 
+coroutine.wrap(OSZRYO_fake_script)()
+local function OBBFAK_fake_script() -- Discord.LocalScript 
 	local script = Instance.new('LocalScript', Discord)
 
 	script.Parent.MouseButton1Down:connect(function()
 		script.Parent.Parent.InsideGame.Visible = false
 		script.Parent.Parent.Infob.BackgroundTransparency = 1.00
-		script.Parent.Parent.gamebutton.BackgroundTransparency = 1.00
+		script.Parent.Parent.WORKYOUPIECEOFS.BackgroundTransparency = 1.00
 		script.Parent.Parent.Discord.BackgroundTransparency = 0.90
 		script.Parent.Parent.InfoF.Visible = false
 		script.Parent.Parent.DiscordB.Visible = true
 	end)
 end
-coroutine.wrap(RLSAU_fake_script)()
-local function BLNG_fake_script() -- Execute1.LocalScript 
+coroutine.wrap(OBBFAK_fake_script)()
+local function CSJZ_fake_script() -- Execute1.LocalScript 
 	local script = Instance.new('LocalScript', Execute1)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
 	end)
 end
-coroutine.wrap(BLNG_fake_script)()
-local function JONBQY_fake_script() -- Execute1_2.LocalScript 
+coroutine.wrap(CSJZ_fake_script)()
+local function SFDUMLQ_fake_script() -- Execute1_2.hell 
 	local script = Instance.new('LocalScript', Execute1_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+	end)
+end
+coroutine.wrap(SFDUMLQ_fake_script)()
+local function SSKAPZY_fake_script() -- Execute1_3.LocalScript 
+	local script = Instance.new('LocalScript', Execute1_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/woahminas/crash/main/crsaher.txt?token=GHSAT0AAAAAABRXJHJUPMYGDHEPQOT2STOYYQP7TJA'), true))()
 	end)
 end
-coroutine.wrap(JONBQY_fake_script)()
-local function VCVRUHM_fake_script() -- Execute1_3.hell 
-	local script = Instance.new('LocalScript', Execute1_3)
+coroutine.wrap(SSKAPZY_fake_script)()
+local function IMMR_fake_script() -- main.LocalScript 
+	local script = Instance.new('LocalScript', main)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'), true))()
-	end)
+	script.Parent.Active = true
+	script.Parent.Draggable = true
 end
-coroutine.wrap(VCVRUHM_fake_script)()
+coroutine.wrap(IMMR_fake_script)()
